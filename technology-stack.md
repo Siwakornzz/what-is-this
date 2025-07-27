@@ -13,7 +13,7 @@ This project is built with a modern, high-performance technology stack organized
 | **User Interface & Styling** | Tailwind CSS                       | A utility-first CSS framework for rapidly building custom, responsive designs directly within the markup.                      |
 |                              | Framer Motion                      | An animation library for creating fluid, performant, and beautiful user interface animations and transitions.                |
 |                              | Heroicons                          | A set of high-quality, consistent SVG icons used throughout the application.                                                 |
-|                              | Google Fonts (Kanit & Sarabun)     | Provides high-quality fonts for clear and professional Thai language display.                                                |
+|                              | Google Fonts (Noto Sans Thai)      | Provides high-quality fonts for clear and professional Thai language display.                                                |
 | **Testing & Quality**        | Vitest                             | A blazing-fast unit testing framework, deeply integrated with Vite, for verifying code logic and functionality.              |
 |                              | React Testing Library              | A library for testing components in a way that resembles how users interact with them, focusing on behavior over implementation. |
 | **Routing & Navigation**     | React Router                       | The standard library for handling all client-side routing, URL management, and navigation between pages within the application. |
