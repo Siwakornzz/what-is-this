@@ -27,7 +27,7 @@ src/
 ├── contexts/            # React Context providers (AuthContext, ModalContext)
 ├── hooks/               # Custom React hooks (useAuth, useSmoothScroll)
 ├── pages/               # Page-level components, mapped to routes
-├── services/            # API service layer (authService)
+├── services/            # DEPRECATED: API service layer (authService). See Architectural_Principles_Protocol.md
 ├── styles/              # Global CSS and theme files
 ├── test/                # Test setup and mock files
 ├── types/               # TypeScript type definitions and Zod schemas
