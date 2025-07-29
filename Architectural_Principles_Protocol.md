@@ -12,9 +12,11 @@ The API layer is responsible for all communication with the backend.
 
 -   **Rule 2.2: Use Custom Hooks with SWR**: All data fetching from the backend that is used to display in a component **MUST** be done through a custom hook that utilizes `useSWR`.
 
--   **Rule 2.3: Centralize API Functions**: The actual API call logic (using `axios`) **MUST** be separated into plain functions and located in `src/api/`. Files should be grouped by domain (e.g., `src/api/authApi.ts`, `src/api/roleApi.ts`). These functions will be called by the SWR fetcher.
+-   **Rule 2.3: Centralize API Functions and Endpoints**: The actual API call logic (using `axios`) **MUST** be separated into plain functions and located in `src/api/`. Files should be grouped by domain (e.g., `src/api/authApi.ts`, `src/api/roleApi.ts`). These functions will be called by the SWR fetcher. **All API endpoints MUST be defined in `src/config/api-endpoints.yaml` and accessed via `src/utils/apiEndpoints.ts`.**
 
 -   **Rule 2.4: Use Central `axiosInstance`**: All `axios` calls **MUST** use the central instance exported from `src/api/axiosInstance.ts`. This instance contains the necessary `baseURL` and `interceptors` for handling authentication tokens.
+
+-   **Rule 2.5: API Endpoint Configuration**: All API endpoints **MUST** be defined in `src/config/api-endpoints.yaml` using a structured, domain-grouped format. These endpoints **MUST** be imported and accessed in the application through the `src/utils/apiEndpoints.ts` utility, which provides type-safe access to the configured paths.
 
 ---
 
