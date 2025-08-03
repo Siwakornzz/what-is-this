@@ -26,3 +26,31 @@ The system is built with a modern tech stack (React, TypeScript, Vite, Tailwind 
 
 ## Business Objective
 To improve the operational efficiency of condominium management by digitizing and centralizing administrative tasks. The project aims to reduce manual paperwork, minimize human error, provide management with real-time data for better decision-making, and ultimately enhance the living experience for residents by providing faster and more transparent services.
+
+## Recent Major Updates (August 2025)
+
+### 1. Internationalization (i18n) Implementation
+- **Technology**: react-i18next with modular translation architecture
+- **Languages**: Thai (default), English, with extensibility for additional languages
+- **Coverage**: Policy permissions, group names, service descriptions, and UI elements
+- **Architecture**: Frontend-based translations for optimal performance and instant language switching
+- **Structure**: Service-grouped translation files for better maintainability
+
+### 2. API Performance Optimization
+- **Role Permissions Management**: Optimized from 3+N API calls to just 2 API calls
+- **New Endpoints**:
+  - `GET /admin/rolePermissionsMatrix` - Single call retrieves all permission data
+  - `PATCH /admin/rolePermissions` - Batch permission updates
+- **Performance Impact**: ~90% reduction in network requests for role management
+- **User Experience**: Faster loading times and reduced server load
+
+### 3. Enhanced Permission Management
+- **New Features**: 
+  - SuperAdmin role prioritization
+  - Group expand/collapse functionality
+  - Inline role creation
+  - Role badges with visual hierarchy
+- **Technical Improvements**:
+  - Fixed expand/collapse bugs
+  - Resolved React key duplication warnings
+  - Improved error handling and logging

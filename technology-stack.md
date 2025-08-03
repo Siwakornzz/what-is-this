@@ -17,3 +17,4 @@ This project is built with a modern, high-performance technology stack organized
 | **Testing & Quality**        | Vitest                             | A blazing-fast unit testing framework, deeply integrated with Vite, for verifying code logic and functionality.              |
 |                              | React Testing Library              | A library for testing components in a way that resembles how users interact with them, focusing on behavior over implementation. |
 | **Routing & Navigation**     | React Router                       | The standard library for handling all client-side routing, URL management, and navigation between pages within the application. |
+| **Internationalization**     | react-i18next & i18next            | Complete internationalization framework for React applications, supporting multiple languages with efficient loading and caching. Implemented with modular service-based translation structure. |
